@@ -22,7 +22,7 @@ function Map() {
       {isLoaded ? (
         <GoogleMap
           center={center}
-          zoom={8}
+          zoom={3}
           mapContainerStyle={{ width: "100%", height: "100%" }}
         >
           {<Marker position={{ lat: latitude || 0, lng: longitude || 0 }} />}

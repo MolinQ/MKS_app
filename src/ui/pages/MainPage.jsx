@@ -6,8 +6,7 @@ import useFetchAllDate from "../../helpers/useFetchAllDate.js";
 function MainPage() {
   useFetchAllDate();
   return (
-    <>
-      <div className="container">
+      <div className="container mt-2">
         <div>
           <Header />
         </div>
@@ -16,7 +15,6 @@ function MainPage() {
           <SideBar />
         </div>
       </div>
-    </>
   );
 }
 
