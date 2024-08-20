@@ -1,7 +1,7 @@
 import {
   formatDateUtc,
   formatTimeUtc,
-} from "../../helpers/useFormDateAndTime.js";
+} from "../../helpers/dateUtils.js";
 
 function CurrentUtcTime() {
   return (

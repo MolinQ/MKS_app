@@ -5,7 +5,4 @@ export const store = configureStore({
   reducer: {
     MKS: mksSlice.reducer,
   },
-  middleware: (getDefaultMiddleware) => {
-    return [...getDefaultMiddleware()];
-  },
 });

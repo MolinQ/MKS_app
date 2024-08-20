@@ -3,7 +3,6 @@ import { useSelector } from "react-redux";
 import selectors from "../../core/selectors.js";
 
 function Map() {
-  const MAP_API_KEY = "AIzaSyBHi04mdnT_YxBzIlghCmFjAzGcTchdtDk";
   const latitude = Number(useSelector(selectors.latitude));
   const longitude = Number(selectors.longitude);
 
@@ -14,7 +13,7 @@ function Map() {
 
   const { isLoaded } = useJsApiLoader({
     id: "google-map-script",
-    googleMapsApiKey: MAP_API_KEY,
+    googleMapsApiKey: import.meta.env.VITE_MAP_API_KEY,
   });
 
   return (
