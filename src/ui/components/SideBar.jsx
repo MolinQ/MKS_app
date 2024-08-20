@@ -6,12 +6,12 @@ import selectors from "../../core/selectors.js";
 function SideBar() {
     const dispatch = useDispatch();
     const currentMembers = useSelector(selectors.members);
-    useEffect(() => {
-        const fetchData = async () => {
-                await dispatch(getMembersFromAPI());
-        }
-        fetchData();
-    }, [dispatch]);
+    // useEffect(() => {
+    //     const fetchData = async () => {
+    //             await dispatch(getMembersFromAPI());
+    //     }
+    //     fetchData();
+    // }, [dispatch]);
 
     return (
         <div className="border p-2 w-25">

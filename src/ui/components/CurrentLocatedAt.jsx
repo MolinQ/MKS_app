@@ -8,12 +8,12 @@ function CurrentLocatedAt() {
     const currentLongitude = useSelector(selectors.longitude)
     const currentLatitude = useSelector(selectors.latitude)
 
-    useEffect(() => {
-        const fetchData = async () => {
-        await dispatch(getMKSLocationFromAPI())
-        }
-        fetchData()
-    })
+    // useEffect(() => {
+    //     const fetchData = async () => {
+    //     await dispatch(getMKSLocationFromAPI())
+    //     }
+    //     fetchData()
+    // })
     return(
         <div className='border w-50 p-2'>
         <p className='fw-bold'>
