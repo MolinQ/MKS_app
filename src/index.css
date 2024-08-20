@@ -1,1 +1,8 @@
 @import "bootstrap/dist/css/bootstrap.css";
+
+.shorter-member-list {
+    max-height: 450px;
+    overflow: auto;
+    list-style: none;
+    padding: 0 ;
+}
