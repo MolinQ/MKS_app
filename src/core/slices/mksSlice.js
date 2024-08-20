@@ -1,10 +1,9 @@
 import { createSlice } from "@reduxjs/toolkit";
-import {getMKSLocationFromAPI} from "../thunks/getMKSLocationFromAPI.js";
 
 const initialState = {
     longitude: 0,
     latitude: 0,
-    markerLocation:'',
+    markerLocation:[],
     members: [],
     loading: false
 }
@@ -17,10 +16,10 @@ export default createSlice({
             state.members = action.payload;
         },
         setMksLongitude: (state,action) => {
-            state.longitude = action.payload
+            state.longitude = action.payload;
         },
         setMksLatitude: (state,action) => {
-            state.latitude = action.payload
+            state.latitude = action.payload;
         },
     }
 })

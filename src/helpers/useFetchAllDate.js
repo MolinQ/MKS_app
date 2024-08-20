@@ -7,8 +7,10 @@ function useFetchAllDate() {
 const dispatch = useDispatch();
 
 useEffect(() => {
+    let isAppStart = false
     const fetchData = async () => {
         try {
+            isAppStart = true;
             await dispatch(getMKSLocationFromAPI());
             await dispatch(getMembersFromAPI());
         } catch (error) {
@@ -16,7 +18,12 @@ useEffect(() => {
         }
     };
 
-    fetchData().then(r => console.log('fetch completed'));
+    fetchData()
+    const intervalId = setInterval(() => {
+        fetchData()
+    }, 5000);
+
+    return () => clearInterval(intervalId); // Cleanup on unmount
 }, [dispatch]);
 }
 export default useFetchAllDate

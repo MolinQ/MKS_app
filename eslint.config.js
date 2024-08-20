@@ -22,8 +22,10 @@ export default [
       react,
       'react-hooks': reactHooks,
       'react-refresh': reactRefresh,
+      'prettier' : this.prettier
+
     },
-    rules: {
+      rules: {
       ...js.configs.recommended.rules,
       ...react.configs.recommended.rules,
       ...react.configs['jsx-runtime'].rules,
@@ -33,6 +35,7 @@ export default [
         'warn',
         { allowConstantExport: true },
       ],
+        'prettier/prettier': 'error'
     },
   },
 ]
