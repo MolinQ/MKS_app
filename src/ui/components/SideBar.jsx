@@ -5,7 +5,6 @@ function SideBar() {
   return (
     <div className="border p-2 w-25">
       <div>
-        <p>Member of IIS</p>
         <ul className="shorter-member-list">
           {currentMembers.map((member, index) => (
             <li
