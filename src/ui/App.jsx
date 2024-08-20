@@ -1,13 +1,13 @@
 import { Provider } from "react-redux";
-import {store} from "../core/store.js";
+import { store } from "../core/store.js";
 import MainPage from "./pages/MainPage.jsx";
 
 function App() {
-  return(
-      <Provider store={store}>
+  return (
+    <Provider store={store}>
       <MainPage />
-          </Provider>
-  )
+    </Provider>
+  );
 }
 
-export default App
+export default App;
